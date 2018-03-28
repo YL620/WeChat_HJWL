@@ -1,0 +1,87 @@
+/* pages/account/register.wxss */
+
+.title {
+  text-align: center;
+  background: #2298d5;
+  height: 35px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 31px;
+}
+
+.logo {
+  width: 175px;
+  margin: 0 auto;
+  height: 120px;
+}
+
+.form-data text, input {
+  float: left;
+}
+
+.form-data input[type=text], .form-data input[type=password] {
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 28px;
+  font-size: 13px;
+  width: 80%;
+}
+
+.form-data .t1 {
+  width: 23%;
+  font-size: 13px;
+  text-align: right;
+  margin-right: 10px;
+  line-height: 25px;
+  float: left;
+}
+
+.form-data .b1 {
+  padding: 20px 0;
+  height: 20px;
+}
+
+.form-data .inputform {
+  width: 72%;
+  float: left;
+}
+
+.input-code {
+  width: 80px !important;
+}
+
+.btn-code {
+  width: 44%;
+  font-size: 13px;
+  border-radius: 0px;
+  float: right;
+  margin-right: 20%;
+}
+
+.btn-gray {
+  width: 36%;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 0px;
+  background: #ccc;
+}
+
+.btn-blue {
+  width: 36%;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 0px;
+  background: #2298D5;
+}
+
+.navigator {
+  color: #2298d5;
+  text-align: right;
+  font-size: 14px;
+  margin-right: 10%;
+}
+
+.tips {
+  font-size: 14px;
+  color: #cc0001;
+}

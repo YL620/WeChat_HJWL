@@ -1,0 +1,6 @@
+<template name="orderlist">
+  <!-- <view>
+    <text>单号:{{item.orderno}}</text>
+    <text>订单状态:{{item.orderstatus}}</text>
+  </view> -->
+</template>

@@ -1,0 +1,33 @@
+<!--pages/index/login.wxml-->
+<view>
+ <view class="logintitle"><text class="center">用户登录</text></view>
+ <view class="login_b">
+  <view class="logo_b">
+    <image class="login_logo" src="http://m.pfcexpress.com/images/logo.png"></image>
+  </view>
+  <view class="login_form login">
+    <view class="line">
+      <text class="t1">用户名:</text>
+      <input type="text" bindinput='setValue' id="loginname"  placeholder='请输入用户名'></input>
+      <text class='prompt' wx:if="{{checkloginname}}">请输入用户名</text>
+    </view>
+    <view class="line">
+      <text class="t1">密码:</text>
+      <input type="password" id='loginpwd' bindinput='setValue' placeholder='请输入密码'></input>
+      <text class='prompt' wx:if="{{checkloginpwd}}">请输入密码</text>
+    </view>
+    <view class="line">
+     <text class="t1"></text>
+     <button class="btn" bindtap='bindLogin'>登录</button>
+    </view>
+  </view>
+  <view class='login_navigator'>
+    <navigator url='register' open-type='navigate'>免费注册</navigator>
+    <text>|</text>
+    <navigator url='http://m.pfcexpress.com/register.html' open-type='redirect'>忘记密码</navigator>
+    <text>|</text>
+    <navigator url='http://m.pfcexpress.com/register.html' open-type='redirect'>登录PC端</navigator>
+  </view>
+  <view class="tip" wx:if="{{showtip}}">{{tip}}</view>
+ </view>
+</view>

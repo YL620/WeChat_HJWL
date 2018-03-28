@@ -1,0 +1,70 @@
+/* pages/index/login.wxss */
+.logintitle{
+  text-align: center;
+  background: #2298D5;
+  height: 35px;
+  color:#fff;
+  font-size:16px;
+  line-height:31px;
+}
+.login_b{
+  background: #fff;
+  font-size:15px;
+  width:100%;
+}
+.login_logo{
+  width:176px;
+  height:51px;
+  margin: 0 auto;
+}
+.logo_b{
+  width: 176px;
+  padding: 40px 0px;
+  margin:0 auto;
+}
+.login_form{
+  padding:0px 50px;
+}
+.login_form .line{
+  padding:10px 0px;
+  clear: both;
+}
+.login_form .t1{
+  float: left;
+  width:60px;
+  text-align: right;
+  margin-right: 10px;
+}
+.login_form input{
+  border:1px solid #CCCCCC;
+  width:65%;
+}
+.login .btn{
+  width:36%;
+  color:#fff;
+  font-size: 13px;
+  background: #FE6601;
+  border-radius: 0px;
+}
+.login_navigator{
+  margin:0 auto;
+  line-height:28px;
+  height:30px;
+  width:224px;
+}
+.login_navigator navigator,text{
+  float:left;
+}
+.login_navigator navigator{
+  color:#2298D5;
+  padding:0 5px;
+  
+}
+.center{
+  margin:0px 40%;
+}
+.prompt{
+  color: #C80000;
+  font-size: 13px;
+  margin-left:26%;
+}

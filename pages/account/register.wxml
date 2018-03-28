@@ -1,0 +1,48 @@
+<!--pages/account/register.wxml-->
+<view>
+  <view class="title">
+    <text class="center">用户注册</text>
+  </view>
+  <view class="logo">
+    <image class="logo" mode='aspectFit' src="http://m.pfcexpress.com/images/logo.png"></image>
+  </view>
+  <view class='form-data'>
+    <view class='b1'>
+      <view class='t1'>
+        手机号码:
+      </view>
+      <view class="inputform">
+        <input type='text' placeholder='请输入手机号码' bindinput="InputPhone"></input>
+        <text class="tips" wx:if="{{showphonetips}}">请输入手机号码</text>
+      </view>
+    </view>
+    <view class='b1'>
+      <view class='t1'>密码:</view>
+      <view class="inputform">
+        <input type='password' bindinput='InputPassWord' id="pwd" placeholder='请输入密码'></input>
+        <text class="tips" wx:if="{{showpwdtips}}">请输入密码</text>
+      </view>
+    </view>
+    <view class='b1'>
+      <view class='t1'>确认密码:</view>
+      <view class="inputform">
+        <input type='password' bindinput='InputPassWord' id="pwd2" placeholder='请再次输入密码'></input>
+        <text class="tips" wx:if="{{showpwdtips2}}">{{textpwdtips2}}</text>
+      </view>
+    </view>
+    <view class='b1'>
+      <view class='t1'>验证码:</view>
+      <view class="inputform">
+        <input type='text' class="input-code" bindinput="InputVerify"></input>
+        <button class="btn-code" data-phone="{{phone}}" disabled="{{IsVerifyCode}}" bindtap="SendVerifyCode">{{textVerify}}</button>
+        <text class="tips" wx:if="{{showverifytips}}">请输入验证码</text>
+      </view>
+    </view>
+    <view class='b1'>
+      <button class="{{registerclass}}" disabled="{{disabledregister}}" bindtap='Register'>注册</button>
+    </view>
+  </view>
+  <view>
+    <navigator class="navigator" url='login' open-type='navigate'>用户登录</navigator>
+  </view>
+</view>
